@@ -26,11 +26,8 @@ fs.readFile(process.argv[2], 'utf-8', function (err, data) {
 	}
 	finish[finish.length - 1] = finish[finish.length - 1].replace(/\+/, ';');
 	finish = finish.join('\n');
-	paster.copy(finish, function (data, err) {
+	paster.copy(finish, function () {
 		console.log('check your clipboard ');
-		if (err) {
-			console.log(err);
-			process.exit(0);
-		}
+		process.exit(0);
 	});
 });

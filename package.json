@@ -1,7 +1,7 @@
 {
 	"name": "paste-template",
-	"version": "0.0.4",
-	"description": "A small utility to take an HTML file and turn it into an addivitive series of strings for use in a .js file.",
+	"version": "0.2.0",
+	"description": "A small utility to take an HTML file and turn it into an addivitive series of strings for use in a .js file. Windows only until I figure out the proper way to publish a CLI script",
 	"dependencies": {
 		"copy-paste": "^0.3.0"
 	},
@@ -29,7 +29,7 @@
 		"url": "https://github.com/jabyrd3/paste-template/issues"
 	},
 	"bin": {
-		"paste-template": "split.js"
+		"paste-template": "./linkage.cmd"
 	},
 	"homepage": "https://github.com/jabyrd3/paste-template"
 }
